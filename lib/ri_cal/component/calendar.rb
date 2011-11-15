@@ -129,7 +129,7 @@ module RiCal
         end
 
         def local_to_utc(utc) #:nodoc:
-          utc_date_time(tzinfo.local_to_utc(utc.to_ri_cal_ruby_value))
+          utc_date_time(tzinfo.local_to_utc(utc.to_ri_cal_ruby_value, true))
         end
 
         def utc_to_local(local) #:nodoc:
